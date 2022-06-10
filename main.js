@@ -9,11 +9,10 @@ let homeShow = () => {
     pag3.classList.add('none')
     pag4.classList.add('none')
     gtag('event', 'page_view', {
-        page_title: 'Home',
-        page_location: "/home",
-        page_path: window.location.pathname,
-        send_to: 'G-H9CCTPLF12'
-    });
+        page_title: 'Inicio Solicitud de crédrito',
+        page_location: 'http://127.0.0.1:5500/home', // Include the full URL
+        send_to: 'G-FRYC17EHQZ'
+        });
 }
 
 let pag2Show = () => {
@@ -21,6 +20,11 @@ let pag2Show = () => {
     pag2.classList.remove('none')
     pag3.classList.add('none')
     pag4.classList.add('none')
+    gtag('event', 'page_view', {
+        page_title: 'Datos personales',
+        page_location: 'http://127.0.0.1:5500/pagina2', // Include the full URL
+        send_to: 'G-FRYC17EHQZ'
+        });
 }
 
 let pag3Show = () => {
@@ -28,12 +32,22 @@ let pag3Show = () => {
     pag2.classList.add('none')
     pag3.classList.remove('none')
     pag4.classList.add('none')
+    gtag('event', 'page_view', {
+        page_title: 'Confirmación de radicación',
+        page_location: 'http://127.0.0.1:5500/pagina3', // Include the full URL
+        send_to: 'G-FRYC17EHQZ'
+        });
 }
 let pag4Show = () => {
     home.classList.add('none')
     pag2.classList.add('none')
     pag3.classList.add('none')
     pag4.classList.remove('none')
+    gtag('event', 'page_view', {
+        page_title: 'Termina el proceso',
+        page_location: 'http://127.0.0.1:5500/pagina4', // Include the full URL
+        send_to: 'G-FRYC17EHQZ'
+        });
 }
 
 let endProcess = () => {
