@@ -10,7 +10,7 @@ let homeShow = () => {
     pag4.classList.add('none')
     gtag('event', 'page_view', {
         page_title: 'Inicio Solicitud de crédrito',
-        page_location: 'http://127.0.0.1:5500/home', // Include the full URL
+        page_location: 'https://test-site-comp.vercel.app/home', // Include the full URL
         send_to: 'G-FRYC17EHQZ'
         });
 }
@@ -22,7 +22,7 @@ let pag2Show = () => {
     pag4.classList.add('none')
     gtag('event', 'page_view', {
         page_title: 'Datos personales',
-        page_location: 'http://127.0.0.1:5500/pagina2', // Include the full URL
+        page_location: 'https://test-site-comp.vercel.app/pagina2', // Include the full URL
         send_to: 'G-FRYC17EHQZ'
         });
 }
@@ -34,7 +34,7 @@ let pag3Show = () => {
     pag4.classList.add('none')
     gtag('event', 'page_view', {
         page_title: 'Confirmación de radicación',
-        page_location: 'http://127.0.0.1:5500/pagina3', // Include the full URL
+        page_location: 'https://test-site-comp.vercel.app/pagina3', // Include the full URL
         send_to: 'G-FRYC17EHQZ'
         });
 }
@@ -45,7 +45,7 @@ let pag4Show = () => {
     pag4.classList.remove('none')
     gtag('event', 'page_view', {
         page_title: 'Termina el proceso',
-        page_location: 'http://127.0.0.1:5500/pagina4', // Include the full URL
+        page_location: 'https://test-site-comp.vercel.app/pagina4', // Include the full URL
         send_to: 'G-FRYC17EHQZ'
         });
 }
