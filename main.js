@@ -1,3 +1,6 @@
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+
 let home = document.getElementById('home');
 let pag2 = document.getElementById('pagina2');
 let pag3 = document.getElementById('pagina3');
@@ -9,10 +12,11 @@ let homeShow = () => {
     pag3.classList.add('none')
     pag4.classList.add('none')
     gtag('event', 'page_view', {
-        page_title: 'Inicio Solicitud de crédrito',
-        page_location: 'https://test-site-comp.vercel.app/home', // Include the full URL
+        page_title: '1. Inicio Solicitud de crédrito',
+        page_location: '/inicio', // Include the full URL
         send_to: 'G-FRYC17EHQZ'
         });
+        fbq('trackCustom', '1. Solicitud Credito', {page:'/inicio', title:'Inicio Solicitud de crédrito'});
 }
 
 let pag2Show = () => {
@@ -22,9 +26,10 @@ let pag2Show = () => {
     pag4.classList.add('none')
     gtag('event', 'page_view', {
         page_title: 'Datos personales',
-        page_location: 'https://test-site-comp.vercel.app/pagina2', // Include the full URL
+        page_location: '/datos-personales', // Include the full URL
         send_to: 'G-FRYC17EHQZ'
         });
+        fbq('trackCustom', '2. Datos Personales', {page:'/home', title:'Datos personales'});
 }
 
 let pag3Show = () => {
@@ -34,9 +39,10 @@ let pag3Show = () => {
     pag4.classList.add('none')
     gtag('event', 'page_view', {
         page_title: 'Confirmación de radicación',
-        page_location: 'https://test-site-comp.vercel.app/pagina3', // Include the full URL
+        page_location: '/confirmacion', // Include the full URL
         send_to: 'G-FRYC17EHQZ'
         });
+        fbq('trackCustom', '3. Confirmación Radicación', {page:'/confirmacion', title:'Confirmación de radicación'});    
 }
 let pag4Show = () => {
     home.classList.add('none')
@@ -45,14 +51,15 @@ let pag4Show = () => {
     pag4.classList.remove('none')
     gtag('event', 'page_view', {
         page_title: 'Termina el proceso',
-        page_location: 'https://test-site-comp.vercel.app/pagina4', // Include the full URL
+        page_location: '/gracias', // Include the full URL
         send_to: 'G-FRYC17EHQZ'
         });
+        fbq('trackCustom', '4. Termina el proceso', {page:'/gracias', title:'Termina el proceso'});
 }
 
 let endProcess = () => {
     homeShow()
 }
 
-homeShow()
+    homeShow()
 
